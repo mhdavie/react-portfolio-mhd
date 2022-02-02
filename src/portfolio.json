@@ -1,11 +1,19 @@
 [
     {
         "id": 1,
-        "name": "",
+        "name": "Tech Blog ",
+        "image": "",
+        "github": "https://github.com/mhdavie/tech-blog-MVC",
+        "deploy": "https://tech-blog-mvc-davie.herokuapp.com/",
+        "topics": "node, sequelize, handlebars, express-session, jawsdb, mysql, model-view-controller, dotenv"
+    },
+    {
+        "id": 4,
+        "name": "Weather Dashboard",
         "image": "",
         "github": "",
         "deploy": "",
-        "topics": ""
-    }
+        "topics": "moment.js, javascript, jQuery, localStorage, API"
+    },
 
 ]
