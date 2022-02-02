@@ -7,8 +7,7 @@ function About() {
     return(
 
 
-        <section className="container">   
-        
+        <section className="container">      
                         
             <div>
                 <img className="mb-5" id="avatar" src="https://avatars.githubusercontent.com/u/88099953?v=4" alt="Mariana Davie" />
@@ -24,7 +23,7 @@ function About() {
                 My professional focal points include data entry, web formatting, proofreading/editing, social media. 
                 I am also, profecient in Microsoft Office and biligual: Portuguese and English.</p>
                 
-        </div>
+            </div>
        
         
        
