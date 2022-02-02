@@ -1,20 +1,17 @@
-import React from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Resume from "./components/Resume";
-import Footer from "./components/Footer";
+import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function App() {
+
+function App() {
   return (
-    <main>
-      <Navbar />
-      <About />
-      <Projects />
-      <Footer />
-      <Resume />
-      <Contact />
-    </main>
+    <div>
+      <Header />
+      <Footer/>
+    </div>
   );
 }
+
+export default App;
