@@ -30,6 +30,46 @@
         "github": "https://github.com/mhdavie/coding-quiz-game",
         "deploy": "https://mhdavie.github.io/coding-quiz-game/",
         "topics": "HTML, CSS, and Javascript"
+    },
+    {
+        "id": 5,
+        "name": "Work Day Scheduler",
+        "image": "",
+        "github": "https://github.com/mhdavie/work-day-schedule-homework-5",
+        "deploy": "https://mhdavie.github.io/work-day-schedule-homework-5/",
+        "topics": " HTML, CSS, and Javascript."
+    },
+    {
+        "id": 6,
+        "name": "Team Profile Generator",
+        "image": "",
+        "github": "https://github.com/mhdavie/team-profile-generator",
+        "deploy": "https://watch.screencastify.com/v/dMJDhifUGRUDaWONVNQr",
+        "topics": "HTML, CSS, JavaScript,  Node.js, Inquirer,   Jest"
+    },
+    {
+        "id": 7,
+        "name": "",
+        "image": "",
+        "github": "",
+        "deploy": "",
+        "topics": ""
+    },
+    {
+        "id": 8,
+        "name": "",
+        "image": "",
+        "github": "",
+        "deploy": "",
+        "topics": ""
+    },
+    {
+        "id": 9,
+        "name": "",
+        "image": "",
+        "github": "",
+        "deploy": "",
+        "topics": ""
     }
 
     
