@@ -150,10 +150,7 @@ const ContactForm = () => {
 
 
                 <div class="mt-5 mb-5" >
-                <button className='submit-btn' type='submit'>
-                  
-                  Submit
-                </button>
+                <button data-testid='button' class="btn btn-outline-dark " type="submit" onSubmit={handleSubmit}>Submit</button>
                 </div>
               </form>
 
