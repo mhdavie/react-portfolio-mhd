@@ -17,11 +17,19 @@
     },
     {
         "id": 3,
-        "name": "Weather Dashboard",
+        "name": "Social Network Api",
         "image": "",
-        "github": "https://github.com/mhdavie/weather-dashboard-homework6",
-        "deploy": "https://mhdavie.github.io/weather-dashboard-homework6/",
-        "topics": "moment.js, javascript, jQuery, localStorage, API"
+        "github": "https://github.com/mhdavie/social-network-API",
+        "deploy": "https://watch.screencastify.com/v/6tObqNHWAOKLuyG52gji",
+        "topics": "Mongo DB, Mongoose, Java Script,  Node.js,  Express"
+    },
+    {
+        "id": 4,
+        "name": "Coding Quiz Game",
+        "image": "",
+        "github": "https://github.com/mhdavie/coding-quiz-game",
+        "deploy": "https://mhdavie.github.io/coding-quiz-game/",
+        "topics": "HTML, CSS, and Javascript"
     }
 
     
