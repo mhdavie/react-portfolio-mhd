@@ -1,70 +1,170 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
 
-function ContactForm() {
+import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+const ContactForm = () => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }
+  } = useForm();
+  
+  // Function that displays a success toast on bottom right of the page when form submission is successful
+  const toastifySuccess = () => {
+    toast('Form sent!', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      className: 'submit-feedback success',
+      toastId: 'notifyToast'
+    });
+  };
+  
+  // Function called on submit that uses emailjs to send email of valid contact form
+  const onSubmit = async (data) => {
+    // Destrcture data object
+    const { name, email, subject, message } = data;
+    try {
+      const templateParams = {
+        name,
+        email,
+        subject,
+        message
+      };
 
-    const [errorMessage, setErrorMessage] = useState('');
+      await emailjs.send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_USER_ID
+      );
 
-    const { name, email, message } = formState;
-
-    function handleChange(e) {
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-    
-                if(!isValid) {
-                    setErrorMessage('please enter a valid email');
-                } else {
-                    setErrorMessage('');
-                }
-
-            } else {
-                if (!e.target.value.length) {
-                  setErrorMessage(`${e.target.name} is required.`);
-                } else {
-                  setErrorMessage('');
-                } 
-        }
-
-        if (!errorMessage) {
-        setFormState({...formState, [e.target.name]: e.target.value })
-        }
+      reset();
+      toastifySuccess();
+    } catch (e) {
+      console.log(e);
     }
+  };
 
-    function handleSubmit(e) {
-        e.preventDefault();
-    }
+  return (
+    <div className='ContactForm'>
 
-return (
-    <section className="container">
-        <h2 data-testid='h1tag' className="top-title">Contact Form</h2>
-        <hr></hr>
-        <form className="justify-content-center" id="contact-form">
-            <div className="mt-5" >
-                <label htmlFor="name">Name:</label>
-                <input className="form-control" type="text" name="name"  defaultValue={name} onBlur={handleChange}/>
-            </div>
-            <div className="mt-5" >
-                <label htmlFor="email">Email Address:</label>
-                <input className="form-control" type="email"  name="email" defaultValue={email} onBlur={handleChange} />
-            </div>
-            <div className="mt-5" >
-                <label htmlFor="message">Message:</label>
-                <textarea className="form-control" name="message" defaultValue={message} onBlur={handleChange} rows="7" />
-            </div> 
-            {errorMessage && (
-            <div>
-                <p className="error-text">{errorMessage}</p>
-            </div>
-            )}
+      <div className='container'>
 
-            <div className="mt-5 mb-5" >
-            <button data-testid='button'className="btn btn-outline-dark " type="submit" onSubmit={handleSubmit}>Submit</button>
+        <div className='row'>
+          
+          <div className='col-12 text-center'>
+
+            <div className='contact-form'>
+
+              <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
+
+                {/* Row 1 of form */}
+                <div className='row formRow'>
+                <div class="mt-5" >
+                  
+                    <input
+                      type='text'
+                      name='name'
+                      {...register('name', {
+                        required: { value: true, message: 'Please enter your name' },
+                        maxLength: {
+                          value: 30,
+                          message: 'Please use 30 characters or less'
+                        }
+                      })}
+                      className='form-control formInput'
+                      placeholder='Name'
+                    ></input>
+                    {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
+                  </div>
+                  </div>
+
+                {/* Row for email adress */}
+
+                    <div className='row formRow'>
+                    <div class="mt-5" >
+                    <input
+                      type='email'
+                      name='email'
+                      {...register('email', {
+                        required: true,
+                        pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                      })}
+                      className='form-control formInput'
+                      placeholder='Email address'
+                    ></input>
+                    {errors.email && (
+                      <span className='errorMessage'>Please enter a valid email address</span>
+                    )}
+                    </div>
+                  </div>
+                
+
+
+                {/* Row for subject*/}
+                <div className='row formRow'>
+                <div class="mt-5" >
+                  
+                    <input
+                      type='text'
+                      name='subject'
+                      {...register('subject', {
+                        required: { value: true, message: 'Please enter a subject' },
+                        maxLength: {
+                          value: 75,
+                          message: 'Subject cannot exceed 75 characters'
+                        }
+                      })}
+                      className='form-control formInput'
+                      placeholder='Subject'
+                    ></input>
+                    {errors.subject && (
+                      <span className='errorMessage'>{errors.subject.message}</span>
+                    )}                
+                 </div> 
+                 </div>
+
+
+                {/* Row 3 of form */}
+                <div className='row formRow'>
+                <div class="mt-5" >
+                    <textarea
+                      rows={3}
+                      name='message'
+                      {...register('message', {
+                        required: true
+                      })}
+                      className='form-control formInput'
+                      placeholder='Message'
+                    ></textarea>
+                    {errors.message && <span className='errorMessage'>Please enter a message</span>}
+                  </div>
+                </div>
+
+
+                <div class="mt-5 mb-5" >
+                <button className='submit-btn' type='submit'>
+                  
+                  Submit
+                </button>
+                </div>
+              </form>
+
             </div>
-        </form>
-    </section>
-    );
-}
-    
+            <ToastContainer />
+
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export default ContactForm;
