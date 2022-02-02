@@ -1,6 +1,6 @@
-@import url('https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css');
+@import url('https://bootswatch.com/5/sketchy/bootstrap.css');
 @import url('https://bootswatch.com/_vendor/font-awesome/css/font-awesome.min.css'); 
-@import url('https://bootswatch.com/5/quartz/bootstrap.css');
+@import url('https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css');
 @import url('https://bootswatch.com/_assets/css/custom.min.css');
 
 main {
@@ -8,7 +8,7 @@ main {
 	max-width: 90%;
   padding: 50px 30px;
 }
-/* :root {
+:root {
   --primary: #8c54ff;
   --secondary: #F3A847;
   --tertiary: #B12704;
@@ -21,7 +21,7 @@ main {
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
 
-} */
+}
 
 * {
   box-sizing: border-box;
@@ -48,22 +48,22 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+/* h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
-}
+} */
 
 h1 {
   font-size: 2.25rem;
 }
 
-h2 {
+/* h2 {
   font-size: 2rem;
   font-family: 'Abril Fatface';
   color: var(--darker);
-}
+} */
 
 h3 {
   font-size: 1.75rem;
@@ -169,10 +169,10 @@ li {
   font-size: 1.9em;
 } */
 
-.top-title {
+/* .top-title {
   font-family: 'Oswald';
   margin-top: 20px;
-}
+} */
 
 .navitem-indent {
   padding-right: 50px;
@@ -198,11 +198,13 @@ nav  li {
 	padding: 5px;
 } */
 
-.container {
-  width: 85%;
+.container{
+  width: 100%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  padding: 10px;
 }
 
 .flex-row {

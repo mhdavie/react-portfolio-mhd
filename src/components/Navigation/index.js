@@ -14,22 +14,22 @@ function Navigation(props) {
         <ul className="navbar-nav ml-auto navitem-indent">
           <li classNames="nav-item">
             <NavLink to="/about">
-              <div className="nav-font text-light">About Me</div>
+              <div className="nav-font title-font">About Me</div>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/portfolio">
-              <div className="nav-font text-light">Portfolio</div>
+              <div className="nav-font title-font">Portfolio</div>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/contact">
-              <div className="nav-font text-light">Contact</div>
+              <div className="nav-font title-font">Contact</div>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/resume">
-              <div className="nav-font text-light">Resume</div>
+              <div className="nav-font title-font">Resume</div>
             </NavLink>
           </li>
         </ul>
