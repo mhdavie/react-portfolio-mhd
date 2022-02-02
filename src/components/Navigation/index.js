@@ -3,9 +3,9 @@ import { Navbar } from "react-bootstrap";
 import {NavLink} from "react-router-dom";
 
 function Navigation(props) {
-  return (
-    <div>
-      <Navbar expand="lg" bg="dark" sticky="top">
+  return ( 
+      <div>
+      <Navbar expand="sm" bg="" sticky="top">
         <NavLink className="nav-link" to="/">
           <div className="text-light">
             <h4 className="nav-title-font">Mariana Davie</h4>
@@ -36,6 +36,6 @@ function Navigation(props) {
       </Navbar>
     </div>
   );
-}
+} 
 
 export default Navigation;

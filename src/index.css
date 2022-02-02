@@ -1,14 +1,14 @@
-/* @import url('https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css');
+@import url('https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css');
 @import url('https://bootswatch.com/_vendor/font-awesome/css/font-awesome.min.css'); 
 @import url('https://bootswatch.com/5/quartz/bootstrap.css');
-@import url('https://bootswatch.com/_assets/css/custom.min.css'); */
+@import url('https://bootswatch.com/_assets/css/custom.min.css');
 
 main {
 	margin: 0 auto;
 	max-width: 90%;
   padding: 50px 30px;
 }
-:root {
+/* :root {
   --primary: #8c54ff;
   --secondary: #F3A847;
   --tertiary: #B12704;
@@ -21,7 +21,7 @@ main {
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
 
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -39,8 +39,8 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--light);
-  font-family: Arial, Helvetica, sans-serif;
+  /* background: var(--light);
+  font-family: Arial, Helvetica, sans-serif; */
 }
 
 h1,
@@ -159,15 +159,15 @@ li {
   list-style: none;
 }
 
-.nav-font {
+/* .nav-font {
   font-family: 'Audiowide' ;
   font-size: 1.5em;
-}
+} */
 
-.nav-title-font {
+/* .nav-title-font {
   font-family: 'Days One';
   font-size: 1.9em;
-}
+} */
 
 .top-title {
   font-family: 'Oswald';

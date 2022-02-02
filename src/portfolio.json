@@ -8,12 +8,22 @@
         "topics": "node, sequelize, handlebars, express-session, jawsdb, mysql, model-view-controller, dotenv"
     },
     {
-        "id": 4,
+        "id": 2,
         "name": "Weather Dashboard",
         "image": "",
-        "github": "",
-        "deploy": "",
+        "github": "https://github.com/mhdavie/weather-dashboard-homework6",
+        "deploy": "https://mhdavie.github.io/weather-dashboard-homework6/",
         "topics": "moment.js, javascript, jQuery, localStorage, API"
     },
+    {
+        "id": 3,
+        "name": "Weather Dashboard",
+        "image": "",
+        "github": "https://github.com/mhdavie/weather-dashboard-homework6",
+        "deploy": "https://mhdavie.github.io/weather-dashboard-homework6/",
+        "topics": "moment.js, javascript, jQuery, localStorage, API"
+    }
+
+    
 
 ]
