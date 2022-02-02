@@ -4,10 +4,10 @@ function About() {
 
     return(
         <section className="container">
-            <h2 class="top-title">Mariana Davie</h2>
+            <h2 className="top-title">Mariana Davie</h2>
             <hr></hr>
             <div>
-                <img class="mb-5" id="avatar" src="https://avatars.githubusercontent.com/u/88099953?v=4" alt="Mariana Davie" />
+                <img className="mb-5" id="avatar" src="https://avatars.githubusercontent.com/u/88099953?v=4" alt="Mariana Davie" />
 
                 <p >After 10+ years of experience as Portuguese Teacher/ Special Ed. Teacher I decided that was time 
                     to change carreers and become a Web Developer.</p>   
