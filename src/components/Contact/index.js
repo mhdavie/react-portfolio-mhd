@@ -61,7 +61,7 @@ const ContactForm = () => {
           
           <div className='col-12 text-center'>
 
-            <div className='contact-form'>
+            <div className='ContactForm'>
 
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
 
@@ -150,7 +150,7 @@ const ContactForm = () => {
 
 
                 <div class="mt-5 mb-5" >
-                <button data-testid='button' class="btn btn-outline-dark " type="submit" onSubmit={handleSubmit}>Submit</button>
+                <button className='submit-btn' class="btn btn-outline-dark " type="submit" onSubmit={handleSubmit}>Submit</button>
                 </div>
               </form>
 
