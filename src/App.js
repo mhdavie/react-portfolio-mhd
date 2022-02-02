@@ -5,6 +5,7 @@ import { HashRouter as Router, Route } from 'react-router-dom/cjs/react-router-d
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from "./components/About"
+import Footer from './components/Footer';
 
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
       <Router>
         <Route exact path="/" component={About}/>
         <Route path="/about" component={About}/>
+        <Route path ="/" component = {Footer}/>
+        <Route path ="/footer" component = {Footer}/>
+        
       </Router>
     </div>
   );
