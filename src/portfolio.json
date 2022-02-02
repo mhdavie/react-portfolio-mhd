@@ -1,6 +1,22 @@
 [
     {
         "id": 1,
+        "name": "Insomaniacs ",
+        "image": "",
+        "github": "https://github.com/ParagasR/Insomniacs-Dashboard",
+        "deploy": "https://paragasr.github.io/Insomniacs-Dashboard/",
+        "topics": "HTML, CSS, Bulma Framework, JavaScript and two third party API's (TMDBA and YouTube)"
+    },
+    {
+        "id": 2,
+        "name": "Donut Forget to Review ",
+        "image": "",
+        "github": "https://github.com/laurelthorburn/DONUT-FORGET-TO-REVIEW",
+        "deploy": "https://donut-forget-to-review.herokuapp.com/",
+        "topics": "sequelize, handlebars, nodeJS, multer, cloudinary "
+    },
+    {
+        "id": 3,
         "name": "Tech Blog ",
         "image": "",
         "github": "https://github.com/mhdavie/tech-blog-MVC",
@@ -8,7 +24,7 @@
         "topics": "node, sequelize, handlebars, express-session, jawsdb, mysql, model-view-controller, dotenv"
     },
     {
-        "id": 2,
+        "id": 4,
         "name": "Weather Dashboard",
         "image": "",
         "github": "https://github.com/mhdavie/weather-dashboard-homework6",
@@ -16,7 +32,7 @@
         "topics": "moment.js, javascript, jQuery, localStorage, API"
     },
     {
-        "id": 3,
+        "id": 5,
         "name": "Social Network Api",
         "image": "",
         "github": "https://github.com/mhdavie/social-network-API",
@@ -24,7 +40,7 @@
         "topics": "Mongo DB, Mongoose, Java Script,  Node.js,  Express"
     },
     {
-        "id": 4,
+        "id": 6,
         "name": "Coding Quiz Game",
         "image": "",
         "github": "https://github.com/mhdavie/coding-quiz-game",
@@ -32,7 +48,7 @@
         "topics": "HTML, CSS, and Javascript"
     },
     {
-        "id": 5,
+        "id": 7,
         "name": "Work Day Scheduler",
         "image": "",
         "github": "https://github.com/mhdavie/work-day-schedule-homework-5",
@@ -40,7 +56,7 @@
         "topics": " HTML, CSS, and Javascript."
     },
     {
-        "id": 6,
+        "id": 8,
         "name": "Team Profile Generator",
         "image": "",
         "github": "https://github.com/mhdavie/team-profile-generator",
@@ -48,28 +64,28 @@
         "topics": "HTML, CSS, JavaScript,  Node.js, Inquirer,   Jest"
     },
     {
-        "id": 7,
-        "name": "",
-        "image": "",
-        "github": "",
-        "deploy": "",
-        "topics": ""
-    },
-    {
-        "id": 8,
-        "name": "",
-        "image": "",
-        "github": "",
-        "deploy": "",
-        "topics": ""
-    },
-    {
         "id": 9,
-        "name": "",
+        "name": "Note Taker",
         "image": "",
-        "github": "",
-        "deploy": "",
-        "topics": ""
+        "github": "https://github.com/mhdavie/note-taker--application",
+        "deploy": "https://morning-crag-44493.herokuapp.com/",
+        "topics": "HTML, CSS, JavaScript, Node.js, EXPRESS, Path, uiidv"
+    },
+    {
+        "id": 10,
+        "name": "Password Generator",
+        "image": "",
+        "github": "https://github.com/mhdavie/Password-Generator-Homework-3",
+        "deploy": "https://mhdavie.github.io/Password-Generator-Homework-3/",
+        "topics": "HTML, CSS, and Javascript"
+    },
+    {
+        "id": 11,
+        "name": "E-commerce Application",
+        "image": "",
+        "github": "https://github.com/mhdavie/e-commerce-application",
+        "deploy": "https://watch.screencastify.com/v/QEEoaJtxZRy4jUijbesM",
+        "topics": "JavaScript, Node.js ,Express, Mysql, Sequalize,  Dotenv"
     }
 
     
