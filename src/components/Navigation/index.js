@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 function Navigation(props) {
   return ( 
       <div>
-      <Navbar ticky="top">
+      <Navbar expand="lg" bg="dark" sticky="top">
         <NavLink className="nav-link" to="/">
           <div className="text-light">
             <h4 className="nav-title-font">Mariana Davie</h4>
@@ -13,22 +13,24 @@ function Navigation(props) {
         </NavLink>
         <ul className="navbar-nav ml-auto navitem-indent">
           <li classNames="nav-item">
-            <NavLink to="/about">
+            <NavLink to="/about" 
+            className={({ isActive }) =>
+            isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin'  }>
               <div className="nav-font title-font">About Me</div>
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/portfolio">
+            <NavLink to="/portfolio" className="active_class_link">
               <div className="nav-font title-font">Portfolio</div>
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/contact">
+            <NavLink to="/contact"  className="active_class_link">
               <div className="nav-font title-font">Contact</div>
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/resume">
+            <NavLink to="/resume"    className="active_class_link">
               <div className="nav-font title-font">Resume</div>
             </NavLink>
           </li>
