@@ -13,9 +13,7 @@ function Navigation(props) {
         </NavLink>
         <ul className="navbar-nav ml-auto navitem-indent">
           <li classNames="nav-item">
-            <NavLink to="/about" 
-            className={({ isActive }) =>
-            isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin'  }>
+            <NavLink to="/about" >
               <div className="nav-font title-font">About Me</div>
             </NavLink>
           </li>
