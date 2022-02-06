@@ -11,8 +11,7 @@ const ContactForm = () => {
     reset,
     formState: { errors }
   } = useForm();
-  const [disable, 
-    setDisabled] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
   // Function that displays a success toast on bottom right of the page when form submission is successful
   const toastifySuccess = () => {
@@ -105,7 +104,7 @@ const ContactForm = () => {
                       name='email'
                       {...register('email', {
                         required: true,
-                        pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                        // pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
                       })}
                       className='form-control formInput'
                       placeholder='Email address'
