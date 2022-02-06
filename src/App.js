@@ -18,7 +18,7 @@ function App() {
         <Route path ="/footer" component = {Footer}/>
 
       </Router> */}
-        
+      
       <Header />
       <Footer/>
     

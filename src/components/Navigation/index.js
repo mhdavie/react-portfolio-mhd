@@ -12,7 +12,7 @@ function Navigation(props) {
           </div>
         </NavLink>
         <ul className="navbar-nav ml-auto navitem-indent">
-          <li classNames="nav-item">
+          <li className="nav-item">
             <NavLink to="/about" >
               <div className="nav-font title-font">About Me</div>
             </NavLink>
