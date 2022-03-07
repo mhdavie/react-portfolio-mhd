@@ -11,7 +11,7 @@ const ContactForm = () => {
     reset,
     formState: { errors }
   } = useForm();
-  const [disabled, setDisabled] = useState(false);
+  const [, setDisabled] = useState(false);
 
   // Function that displays a success toast on bottom right of the page when form submission is successful
   const toastifySuccess = () => {
