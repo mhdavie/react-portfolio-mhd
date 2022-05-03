@@ -27,6 +27,8 @@ function About() {
                     I am also, proficient in Microsoft Office and bilingual: Portuguese and English. </p>
                 
             </div>
+            <br></br>
+            <br></br>
        
         
        
