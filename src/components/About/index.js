@@ -16,12 +16,15 @@ function About() {
                 <p >After 10+ years of experience as Portuguese Teacher/ Special Ed. Teacher I decided that was time 
                     to change carreers and become a Web Developer.</p>   
               
-                <p >I am currently a student at University of Denver Full-Stack Developer Bootcamp.
-                    I am passionated about front-end development. It's exciting to see your ideas coverting in something real and
-                    getting the results back very quickly. Front-end develompment its my oportunity to embrace my creativity.
-              
-                My professional focal points include data entry, web formatting, proofreading/editing, social media. 
-                I am also, profecient in Microsoft Office and biligual: Portuguese and English.</p>
+                <p >I am currently a student at University of Denver Full-Stack Developer Bootcamp. 
+
+                    I am passionate about front-end development. It's exciting to see your ideas converting in something real and 
+
+                    getting the results back very quickly. Front-end development it's my opportunity to embrace my creativity.               
+
+                    My professional focal points include data entry, web formatting, proofreading/editing, social media.  
+
+                    I am also, proficient in Microsoft Office and bilingual: Portuguese and English. </p>
                 
             </div>
        
