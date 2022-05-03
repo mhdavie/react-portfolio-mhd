@@ -32,7 +32,7 @@ The application contained within is a personal portfolio website and it was crea
 
 ## GitHub Deployed Application 
 
-* [Mariana Davie Portfolio  Heroku ](https://mhdavie.github.io/react-portfolio-mhd/#/about)
+* [Mariana Davie Portfolio ](https://mhdavie.github.io/react-portfolio-mhd/#/about)
 
 ## Application Screenshot
 

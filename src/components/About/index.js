@@ -20,7 +20,7 @@ function About() {
 
                     I am passionate about front-end development. It's exciting to see your ideas converting in something real and 
 
-                    getting the results back very quickly. Front-end development it's my opportunity to embrace my creativity.               
+                    getting the results back very quickly. Front-end development is my opportunity to embrace my creativity.               
 
                     My professional focal points include data entry, web formatting, proofreading/editing, social media.  
 
