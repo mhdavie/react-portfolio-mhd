@@ -13,18 +13,9 @@ function About() {
                 <img className="mb-5" id="avatar" src="https://avatars.githubusercontent.com/u/88099953?v=4" alt="Mariana Davie" />
       
                 <h4 className="nav-title-font">Mariana Davie</h4>
-                <p >After 10+ years of experience as Portuguese Teacher/ Special Ed. Teacher I decided that was time 
-                    to change careers and become a Web Developer.</p>   
-              
-                <p >I am currently a student at University of Denver Full-Stack Developer Bootcamp. 
-
-                    I am passionate about front-end development. It's exciting to see your ideas converting in something real and 
-
-                    getting the results back very quickly. Front-end development is my opportunity to embrace my creativity.               
-
-                    My professional focal points include data entry, web formatting, proofreading/editing, social media.  
-
-                    I am also, proficient in Microsoft Office and bilingual: Portuguese and English. </p>
+                
+                <p>Recently graduated Full-Stack Web Developer from University of Denver. Passionate about Programming and learning new technologies. 
+                Currently looking for an entry level position that will expand my knowledge and build upon my web developer skills. Authorized to work for any US employer.</p>
                 
             </div>
             <br></br>
