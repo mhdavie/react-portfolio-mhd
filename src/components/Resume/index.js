@@ -30,7 +30,7 @@ function Resume() {
 
           <p> Please download my resume below </p>
           <a
-            href="https://github.com/fondofhats/react-portfolio/raw/main/docs/marianaresume.docx"
+            href="https://github.com/mhdavie/react-portfolio-mhd/blob/main/docs/marianaresume.docx"
             class="link"
           >
             Download 
